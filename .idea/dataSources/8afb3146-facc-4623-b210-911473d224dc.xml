@@ -5113,138 +5113,148 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="1152" parent="369" name="leads_master_table_contacts_id_fk">
+    <column id="1152" parent="369" name="eligibility">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="1153" parent="369" name="leads_master_table_contacts_id_fk">
       <ColNames>contact_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="1153" parent="369" name="leads_product_id_fk">
+    <index id="1154" parent="369" name="leads_product_id_fk">
       <ColNames>product_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="1154" parent="369" name="PRIMARY">
+    <key id="1155" parent="369" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1155" parent="369" name="leads_master_table_contacts_id_fk">
+    <foreign-key id="1156" parent="369" name="leads_master_table_contacts_id_fk">
       <ColNames>contact_id</ColNames>
       <RefTableName>contacts_initial</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="1156" parent="369" name="leads_product_id_fk">
+    <foreign-key id="1157" parent="369" name="leads_product_id_fk">
       <ColNames>product_id</ColNames>
       <RefTableName>product</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="1157" parent="370" name="id">
+    <column id="1158" parent="370" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="1158" parent="370" name="title">
+    <column id="1159" parent="370" name="title">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="1159" parent="370" name="PRIMARY">
+    <key id="1160" parent="370" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="1160" parent="371" name="opp_id">
+    <column id="1161" parent="371" name="opp_id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="1161" parent="371" name="lead_id">
+    <column id="1162" parent="371" name="lead_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="1162" parent="371" name="history_id">
+    <column id="1163" parent="371" name="history_id">
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </column>
-    <index id="1163" parent="371" name="opportunities_leads_id_fk">
+    <index id="1164" parent="371" name="opportunities_leads_id_fk">
       <ColNames>lead_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="1164" parent="371" name="opportunities_history_id_fk">
+    <index id="1165" parent="371" name="opportunities_history_id_fk">
       <ColNames>history_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="1165" parent="371" name="PRIMARY">
+    <key id="1166" parent="371" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>opp_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1166" parent="371" name="opportunities_leads_id_fk">
+    <foreign-key id="1167" parent="371" name="opportunities_leads_id_fk">
       <ColNames>lead_id</ColNames>
       <RefTableName>leads</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="1167" parent="371" name="opportunities_history_id_fk">
+    <foreign-key id="1168" parent="371" name="opportunities_history_id_fk">
       <ColNames>history_id</ColNames>
       <RefTableName>history</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="1168" parent="372" name="id">
+    <column id="1169" parent="372" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="1169" parent="372" name="nomenclature">
+    <column id="1170" parent="372" name="nomenclature">
       <Position>2</Position>
       <DataType>varchar(15)|0s</DataType>
     </column>
-    <key id="1170" parent="372" name="PRIMARY">
+    <key id="1171" parent="372" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="1171" parent="373" name="id">
+    <column id="1172" parent="373" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="1172" parent="373" name="agent_id">
+    <column id="1173" parent="373" name="agent_id">
       <Position>2</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="1173" parent="373" name="assigned_to">
+    <column id="1174" parent="373" name="assigned_to">
       <Position>3</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="1174" parent="373" name="description">
+    <column id="1175" parent="373" name="description">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="1175" parent="373" name="tasks_agents_id_fk">
+    <column id="1176" parent="373" name="status">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="1177" parent="373" name="tasks_agents_id_fk">
       <ColNames>agent_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="1176" parent="373" name="tasks_agents_id_fk_2">
+    <index id="1178" parent="373" name="tasks_agents_id_fk_2">
       <ColNames>assigned_to</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="1177" parent="373" name="PRIMARY">
+    <key id="1179" parent="373" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1178" parent="373" name="tasks_agents_id_fk">
+    <foreign-key id="1180" parent="373" name="tasks_agents_id_fk">
       <ColNames>agent_id</ColNames>
       <RefTableName>agents</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="1179" parent="373" name="tasks_agents_id_fk_2">
+    <foreign-key id="1181" parent="373" name="tasks_agents_id_fk_2">
       <ColNames>assigned_to</ColNames>
       <RefTableName>agents</RefTableName>
       <RefColNames>id</RefColNames>
