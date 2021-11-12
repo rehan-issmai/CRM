@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6e19d9d-d5cc-4fe3-9ebe-6e134a665274" name="Changes" comment="Second Version for CRM ISSM">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8afb3146-facc-4623-b210-911473d224dc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8afb3146-facc-4623-b210-911473d224dc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a6e19d9d-d5cc-4fe3-9ebe-6e134a665274" name="Changes" comment="Second Version for CRM ISSM" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
